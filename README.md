@@ -12,6 +12,7 @@ rule sessions to persist trends so that they may be further searched against the
  - Drools core (business rules engine, simple trend analysis)
  - Twitter4J ([Twitter API](https://dev.twitter.com/), stream and search)
  - Mockito (testing)
+ - [Maven](pom.xml) (dependency mgmt)
  - EC2 Instances & Load Balancing for Hazelcast & RabbitMQ (optional)
 
 ## Getting Started:
