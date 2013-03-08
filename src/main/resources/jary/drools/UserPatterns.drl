@@ -1,0 +1,15 @@
+package jary.drools
+
+import jary.drools.model.User
+
+global jary.drools.RuleDelegate delegate
+
+// simple rule detecting that we've seen a user multiple times, so
+// we should further query user and build a larger set of track
+// data for consumption
+rule "frequent user"
+when
+    $user : User ( statusList.size() > 1 )
+then
+    delegate.handleTrend($user);
+end
